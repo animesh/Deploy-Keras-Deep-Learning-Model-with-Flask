@@ -1,3 +1,22 @@
+# Setup for missing-value-predictions [NA]
+
+-explore missing values in MaxQuant label-free-quantification[http://www.mcponline.org/cgi/pmidlookup?view=long&pmid=24942700] values in proteinGroups.txt output
+-predict pooled sample values
+
+```bash
+python3 -m pip install flask
+flask run
+```
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+```bash
+curl -d '{"LFQ intensity 4_TK9_apim1": 21.943673,"LFQ intensity 5_TK9_apim_2": 0.000000,"LFQ intensity 6_TK9_apim_3": 22.097802}' -H "Content-Type: application/json" -X POST http://localhost:5000
+```
+127.0.0.1 - - [08/Mar/2020 20:35:38] "POST / HTTP/1.1" 200 -
+{"NA":"961975.0588898719"}
+
+
+
 # Zero to Production
 
 > It is not recommended to deploy your production models as shown here. This is just an end-to-end example to get started quickly.

@@ -1,14 +1,9 @@
 import requests
 
 data = {
-    "neighbourhood_group": "Brooklyn",
-    "latitude": 40.64749,
-    "longitude": -73.97237,
-    "room_type": "Private room",
-    "minimum_nights": 1,
-    "number_of_reviews": 9,
-    "calculated_host_listings_count": 6,
-    "availability_365": 365
+"LFQ intensity 4_TK9_apim1": 21.943673,
+"LFQ intensity 5_TK9_apim_2": 0.000000,
+"LFQ intensity 6_TK9_apim_3": 22.097802
 }
 
 TEST_URL = "http://localhost:5000"
